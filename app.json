@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "EcoNex Smart Bin",
+    "slug": "econex-smart-bin-v2",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#059212"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses camera to scan QR codes for bin collection",
+        "NSLocationWhenInUseUsageDescription": "This app uses location to show nearby bins and optimize collection routes"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#059212"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.abinayasri_j.econexsmartbinv2"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-local-authentication",
+      "expo-camera",
+      "expo-location",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#059212"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7ac3b48b-207a-4328-832d-164819e3bd60"
+      }
+    },
+    "owner": "abinayasri_j"
+  }
+}
